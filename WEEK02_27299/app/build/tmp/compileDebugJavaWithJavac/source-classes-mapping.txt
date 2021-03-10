@@ -1,0 +1,8 @@
+umn/ac/id/week02_27299/BuildConfig.java
+ umn.ac.id.week02_27299.BuildConfig
+umn/ac/id/week02_27299/MainActivity.java
+ umn.ac.id.week02_27299.MainActivity
+ umn.ac.id.week02_27299.MainActivity$1
+ umn.ac.id.week02_27299.MainActivity$2
+ umn.ac.id.week02_27299.MainActivity$3
+ umn.ac.id.week02_27299.MainActivity$4
