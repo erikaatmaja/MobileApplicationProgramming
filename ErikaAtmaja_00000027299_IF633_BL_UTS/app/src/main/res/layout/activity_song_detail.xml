@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".music.SongDetailActivity"
+    android:background="@color/cream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orange2">
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            style="?android:attr/borderlessButtonStyle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Now Playing"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@color/cream"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/thumbnailDetail"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:src="@color/green"/>
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="JudulLagu"
+        android:textColor="@color/orange"/>
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="namaArtist"
+        android:textColor="@color/cream2"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/seekbarLayout">
+
+            <TextView
+                android:id="@+id/durationstart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0:00"
+                android:paddingTop="10dp"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/durationtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0:00"
+                android:paddingTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="30dp"
+            android:layout_gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/btnrepeat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/repeat"
+                style="?android:attr/borderlessButtonStyle"/>
+            <ImageButton
+                android:id="@+id/btnprev"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/prev"
+                style="?android:attr/borderlessButtonStyle"/>
+            <ImageButton
+                android:id="@+id/btnplaypause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/play"
+                style="?android:attr/borderlessButtonStyle"/>
+            <ImageButton
+                android:id="@+id/btnnext"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/next"
+                style="?android:attr/borderlessButtonStyle"/>
+            <ImageButton
+                android:id="@+id/btnshuffle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/shuffle"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+</LinearLayout>
